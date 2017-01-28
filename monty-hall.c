@@ -5,7 +5,7 @@ void monty_hall() {
     void *random_byte = malloc(1);
 
     FILE *f;
-    if ((f = fopen("/dev/urandom", "r")) == NULL) {
+    if ((f = fopen("/dev/urandom", "rb")) == NULL) {
         fprintf(stderr, "There was a problem opening urandom.\n");
         exit(-1);
     }
